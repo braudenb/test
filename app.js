@@ -43,6 +43,10 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/new', (req, res) => {
+  res.render('new.hbs');
+});
+
 
 app.listen(port, () => {
   console.log('Server is running on ' + port);
